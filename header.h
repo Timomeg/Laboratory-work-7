@@ -7,6 +7,7 @@
 #include <vector>
 #include <map>
 #include <fstream>
+#include <string>
 
 void saveToFile(const std::string& filename, const std::vector<std::string>& data);
 
