@@ -39,10 +39,8 @@ struct Student
     std::map<std::string, Score> RecordBook;
 };
 
-// в качестве ключа - название группы
-// в качестве значения - список студентов
 using Groups = std::map<std::string, std::vector<Student>>;
 
 void saveToFile(const std::string& filename, const Groups& groups);
 
-void loadFromFile(const std::string& filename, const Groups& outGroups);
+void loadFromFile(const std::string& filename, Groups& outGroups);
